@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const {getPageBlock} = await import("../../utils.js");
+  const {getPageBlock} = await import("../../utils.mjs");
 
   try {
     if (!req.query?.page_id) {
